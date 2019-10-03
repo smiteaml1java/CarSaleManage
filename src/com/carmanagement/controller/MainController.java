@@ -28,7 +28,7 @@ public class MainController {
 	
 	@RequestMapping("/login")
 	public ModelAndView loginPage() {
-		return new ModelAndView("login");
+		return new ModelAndView("AfterLogin");
 	}
 
 	@RequestMapping(name = "/loginAction", method = RequestMethod.GET)
@@ -52,5 +52,9 @@ public class MainController {
 			System.out.println(e1);
 		}
 		return mav1;
+	}
+	@RequestMapping("/featureelite")
+	public ModelAndView bookingClick() {
+		return new ModelAndView("featureelite");
 	}
 }
